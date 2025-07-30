@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat malam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f864cc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        .card h1 {
+            color: #e45eb7;
+            margin: 20px 0 10px;
+            font-size: 24px;
+        }
+        .card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #d53a47;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #b3303b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>selamat malam</h1>
+        <p> 
+            haii sayang, gimana rasany hari ini? pasti rasany ga enak banget hari pertama pms. tubuh ga nyaman, 
+            pegel pegel, emosi naik turun, dan hal hal kecil bisa bikin kamu sensi banget. tapi aku cuma mau 
+            bilang, gapapa banget ngerasain itu semua, kamu ga sendirian kok, aku disini buat nemenin kamu, meskipun
+            mungkin cuma lewat kata kata. klo pengen marah, nangis, atau diem aja, gapapa sayang silahkan. jangan
+            ngrasa harus kuat terusss, kamu udah hebat banget udah jalanin hari ini dengan baik walau badan kamu lagi
+            ga enak ga bersahabat. aku tau kadang orang bisa salah paham atau malah nyebelin saat kamu lagi sensitif,
+            tapi aku gaakan jadi salah satu dari mereka, aku ngerti dan aku mau terus ada buat kamu, jangan lupa mam
+            yang cukup ya, jangan smpe perutny kosong nanti bisa makin sakit, minum air putih yang banyak juga biar
+            tubuh kamu tetep seimbang, klo kamu butuh istirahat, bobo aja sayang, klo kamu butuh cerita, aku dengerin.
+            semangat ya sayang, masa ini bakal berlalu, dan kamu akan balik lagi jadi versi ceriamu yang aku sukaa, tapi
+            walau kamu lagi murung, marah, atau cape tetep kamu yang aku sayang. i love you more
+        </p>
+    </div>
+<audio autoplay loop>
+    <source src="audio/aaa.mp3" type=" audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.querySelector("audio");
+      const userInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", userInteraction);
+      };
+      document.addEventListener("click", userInteraction);
+    });
+  </script>
+</body>
+</html> 
